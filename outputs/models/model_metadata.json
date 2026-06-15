@@ -1,0 +1,136 @@
+{
+  "best_full_feature_model": {
+    "name": "Random Forest",
+    "file": "trained_random_forest_full_features.joblib",
+    "model_name": "Random Forest",
+    "model_type": "full_feature",
+    "prediction_mode": "Full-feature live page extraction",
+    "label_mapping": {
+      "0": "LEGITIMATE",
+      "1": "PHISHING"
+    },
+    "classes": [
+      0,
+      1
+    ],
+    "feature_count": 50,
+    "training_feature_list_file": "full_feature_list.json",
+    "accuracy": 1.0,
+    "f1": 1.0,
+    "roc_auc": 1.0,
+    "precision": 1.0,
+    "recall": 1.0
+  },
+  "best_url_only_model": {
+    "name": "XGBoost URL-only",
+    "file": "trained_xgboost_url_only.joblib",
+    "model_name": "XGBoost URL-only",
+    "model_type": "url_only",
+    "prediction_mode": "URL-only fallback model",
+    "label_mapping": {
+      "0": "LEGITIMATE",
+      "1": "PHISHING"
+    },
+    "classes": [
+      0,
+      1
+    ],
+    "feature_count": 27,
+    "training_feature_list_file": "url_only_feature_list.json",
+    "accuracy": 0.99504167,
+    "f1": 0.99505752,
+    "roc_auc": 0.99795999,
+    "precision": 0.9918854,
+    "recall": 0.99825
+  },
+  "all_models": {
+    "Random Forest": {
+      "name": "Random Forest",
+      "model_name": "Random Forest",
+      "model_type": "full_feature",
+      "prediction_mode": "Full-feature live page extraction",
+      "file": "trained_random_forest_full_features.joblib",
+      "label_mapping": {
+        "0": "LEGITIMATE",
+        "1": "PHISHING"
+      },
+      "classes": [
+        0,
+        1
+      ],
+      "feature_count": 50,
+      "training_feature_list_file": "full_feature_list.json",
+      "accuracy": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "XGBoost": {
+      "name": "XGBoost",
+      "model_name": "XGBoost",
+      "model_type": "full_feature",
+      "prediction_mode": "Full-feature live page extraction",
+      "file": "trained_xgboost_full_features.joblib",
+      "label_mapping": {
+        "0": "LEGITIMATE",
+        "1": "PHISHING"
+      },
+      "classes": [
+        0,
+        1
+      ],
+      "feature_count": 50,
+      "training_feature_list_file": "full_feature_list.json",
+      "accuracy": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "Random Forest URL-only": {
+      "name": "Random Forest URL-only",
+      "model_name": "Random Forest URL-only",
+      "model_type": "url_only",
+      "prediction_mode": "URL-only fallback model",
+      "file": "trained_random_forest_url_only.joblib",
+      "label_mapping": {
+        "0": "LEGITIMATE",
+        "1": "PHISHING"
+      },
+      "classes": [
+        0,
+        1
+      ],
+      "feature_count": 27,
+      "training_feature_list_file": "url_only_feature_list.json",
+      "accuracy": 0.994875,
+      "f1": 0.99489732,
+      "roc_auc": 0.99786222,
+      "precision": 0.9905824,
+      "recall": 0.99925
+    },
+    "XGBoost URL-only": {
+      "name": "XGBoost URL-only",
+      "model_name": "XGBoost URL-only",
+      "model_type": "url_only",
+      "prediction_mode": "URL-only fallback model",
+      "file": "trained_xgboost_url_only.joblib",
+      "label_mapping": {
+        "0": "LEGITIMATE",
+        "1": "PHISHING"
+      },
+      "classes": [
+        0,
+        1
+      ],
+      "feature_count": 27,
+      "training_feature_list_file": "url_only_feature_list.json",
+      "accuracy": 0.99504167,
+      "f1": 0.99505752,
+      "roc_auc": 0.99795999,
+      "precision": 0.9918854,
+      "recall": 0.99825
+    }
+  }
+}
